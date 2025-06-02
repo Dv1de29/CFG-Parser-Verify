@@ -48,8 +48,6 @@ The grammar file should follow a format readable by `parser.py`, and it must inc
 ### Example Format
 
 Each production rule should follow the form:
-
-### Example Format
 ```
 S -> aSb | @
 ```
