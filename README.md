@@ -28,8 +28,31 @@ The script parses a CFG from a user-provided file, generates up to 10 unique str
 ### Generate strings from a grammar file:
 
 ```bash
-python main_script.py grammar.txt
+py CFG.py grammar.txt
 ```
 
+### Generate strings from grammar files and verify words from a words text file if they are from that CFG
+```bash
+py CFG.py grammar.txt words.txt
+```
+
+## Grammar File Format (`grammar.txt`)
+
+The grammar file should follow a format readable by `parser.py`, and it must include:
+
+- A list of **non-terminals**
+- A list of **terminals**
+- A **start symbol**
+- A set of **production rules**
+
+### Example Format
+
+Each production rule should follow the form:
+
+### Example Format
+```
+S -> aSb | @
+```
+where @ is the lambda symbol (ε)
 
 
